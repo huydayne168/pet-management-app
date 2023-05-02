@@ -1,0 +1,121 @@
+* {
+    transition: all ease 300ms;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    position: relative;
+    height: 100vh;
+    font-size: 1.6rem;
+    margin: 0px;
+    background-color: #ff3cac;
+    background-image: linear-gradient(
+        135deg,
+        #ff3cac 0%,
+        #784ba0 50%,
+        #2b86c5 100%
+    );
+    background-repeat: no-repeat;
+    color: #fff;
+    font-family: "Source Sans Pro", sans-serif;
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.grid {
+    display: grid;
+    gap: 12px;
+}
+
+.content {
+    max-width: 1024px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+    color: #fff;
+}
+
+.hidden {
+    display: none !important;
+}
+
+/* === Side Bar CSS === */
+#side-bar {
+    width: 250px;
+    height: 100%;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+    text-align: center;
+    /* gap: 20px; */
+    background-color: #7149c6;
+}
+
+#side-bar a {
+    height: 70px;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+#side-bar a:hover {
+    background-color: #522ca2;
+    border-radius: 4px;
+}
+
+#side-bar a:first-child {
+    font-size: 3.2rem;
+}
+
+/* hide sidebar: */
+#side-bar.active {
+    width: 8rem;
+    white-space: nowrap;
+}
+
+#side-bar.active a {
+    flex-direction: column;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ==== Main Container ==== */
+#side-bar.active ~ #main {
+    margin-left: 80px;
+}
+#main {
+    height: 100%;
+    margin-left: 250px;
+}
+
+#main .container {
+    height: 100%;
+    overflow-y: scroll;
+    padding: 1.8rem;
+}
+
+/* header */
+header.logo {
+    font-size: 3.2rem;
+    color: #444;
+    background-color: #fff;
+    padding: 22px 12px;
+    text-transform: uppercase;
+    border-radius: 12px;
+}

@@ -1,0 +1,13 @@
+.input-form .grid .id-wrapper,
+.input-form .type-wrapper {
+    grid-column: 1 / span 1;
+}
+
+.id-wrapper input,
+.type-wrapper select {
+    width: calc(100% / 1.5);
+}
+
+button.find {
+    padding: 1.2rem 2rem;
+}

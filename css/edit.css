@@ -1,0 +1,11 @@
+#list .list-wrapper button.edit {
+    padding: 0.6rem 1.2rem;
+    color: inherit;
+    background-color: orange;
+}
+
+#list .list-wrapper button.edit:hover {
+    background-color: rgb(233, 233, 122);
+}
+
+/* ==== Edit Form CSS ==== */

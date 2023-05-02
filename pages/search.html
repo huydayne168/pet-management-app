@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- link font awesome -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+            integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+
+        <!-- link reset css -->
+        <link rel="stylesheet" href="../css/reset.css" />
+        <!-- link utilities CSS -->
+        <link rel="stylesheet" href="../css/utilities.css" />
+        <!-- link main css -->
+        <link rel="stylesheet" href="../css/style.css" />
+        <!-- link edit css -->
+        <link rel="stylesheet" href="../css/search.css" />
+        <title>Search</title>
+    </head>
+    <body>
+        <div id="side-bar">
+            <a href="../index.html" class="app">
+                <i class="fa-solid fa-shield-dog"></i>
+                <p>Pet App</p>
+            </a>
+
+            <a href="#" class="more hidden">
+                <i class="fa-solid fa-bars"></i>
+            </a>
+
+            <a href="../index.html" class="home">
+                <i class="fa-solid fa-house"></i>
+                <p>Home</p>
+            </a>
+
+            <a href="./edit.html" class="edit">
+                <i class="fa-solid fa-pen-to-square"></i>
+                <p>Edit</p>
+            </a>
+
+            <a href="./search.html" class="search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <p>Search</p>
+            </a>
+
+            <a href="./breed.html" class="breed">
+                <i class="fa-solid fa-list"></i>
+                <p>Breed</p>
+            </a>
+
+            <a href="./data.html" class="data">
+                <i class="fa-solid fa-file"></i>
+                <p>Data</p>
+            </a>
+        </div>
+
+        <main id="main">
+            <div class="container">
+                <header class="logo">
+                    <h1>Search pet</h1>
+                </header>
+
+                <div class="content">
+                    <form class="input-form">
+                        <div class="grid">
+                            <div class="id-wrapper">
+                                <label for="id"> Pet ID </label>
+                                <input
+                                    type="text"
+                                    name="id"
+                                    id="id"
+                                    placeholder="Input ID"
+                                />
+                            </div>
+
+                            <div class="name-wrapper">
+                                <label for="name"> Pet Name </label>
+                                <input
+                                    type="text"
+                                    name="name"
+                                    id="name"
+                                    placeholder="Input Name"
+                                />
+                            </div>
+
+                            <div class="type-wrapper">
+                                <label for="pet-select"> Pet Type </label>
+                                <select name="pets" id="pet-select">
+                                    <option value="select">
+                                        --Select Type--
+                                    </option>
+                                    <option value="Dog">Dog</option>
+                                    <option value="Cat">Cat</option>
+                                </select>
+                            </div>
+
+                            <div class="breed-wrapper">
+                                <label for="breed-select"> Breed ID </label>
+                                <select name="breeds" id="breed-select">
+                                    <option value="select">
+                                        --Select Breed--
+                                    </option>
+                                    <!-- render breeds of each type here -->
+                                </select>
+                            </div>
+
+                            <div class="check-heath">
+                                <label for="vaccinated">
+                                    Vaccinated
+                                    <input
+                                        type="checkbox"
+                                        name="vaccinated"
+                                        id="vaccinated"
+                                    />
+                                </label>
+
+                                <label for="dewormed">
+                                    Dewormed
+                                    <input
+                                        type="checkbox"
+                                        name="dewormed"
+                                        id="dewormed"
+                                    />
+                                </label>
+
+                                <label for="sterilized">
+                                    Sterilized
+                                    <input
+                                        type="checkbox"
+                                        name="sterilized"
+                                        id="sterilized"
+                                    />
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="button-wrapper">
+                            <button type="submit" class="find">Find</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </main>
+
+        <!-- link javascript -->
+        <script src="../js/utilities.js"></script>
+        <script src="../js/search.js"></script>
+    </body>
+</html>

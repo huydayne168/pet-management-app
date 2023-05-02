@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- link font awesome -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+            integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+
+        <!-- link reset css -->
+        <link rel="stylesheet" href="./css/reset.css" />
+        <!-- link utilities CSS -->
+        <link rel="stylesheet" href="./css/utilities.css" />
+        <!-- link main css -->
+        <link rel="stylesheet" href="./css/style.css" />
+        <title>JS assignment 01</title>
+    </head>
+    <body>
+        <div id="side-bar">
+            <a href="#" class="app">
+                <i class="fa-solid fa-shield-dog"></i>
+                <p>Pet App</p>
+            </a>
+
+            <a href="#" class="more hidden">
+                <i class="fa-solid fa-bars"></i>
+            </a>
+
+            <a href="#" class="home">
+                <i class="fa-solid fa-house"></i>
+                <p>Home</p>
+            </a>
+
+            <a href="./pages/edit.html" class="edit">
+                <i class="fa-solid fa-pen-to-square"></i>
+                <p>Edit</p>
+            </a>
+
+            <a href="./pages/search.html" class="search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <p>Search</p>
+            </a>
+
+            <a href="pages/breed.html" class="breed">
+                <i class="fa-solid fa-list"></i>
+                <p>Breed</p>
+            </a>
+
+            <a href="./pages/data.html" class="data">
+                <i class="fa-solid fa-file"></i>
+                <p>Data</p>
+            </a>
+        </div>
+
+        <main id="main">
+            <div class="container">
+                <header class="logo">
+                    <h1>pet management</h1>
+                </header>
+
+                <div class="content">
+                    <form class="input-form">
+                        <div class="grid">
+                            <div class="id-wrapper">
+                                <label for="id"> Pet ID </label>
+                                <input
+                                    type="text"
+                                    name="id"
+                                    id="id"
+                                    placeholder="Input ID"
+                                />
+                            </div>
+
+                            <div class="name-wrapper">
+                                <label for="name"> Pet Name </label>
+                                <input
+                                    type="text"
+                                    name="name"
+                                    id="name"
+                                    placeholder="Input Name"
+                                />
+                            </div>
+
+                            <div class="age-wrapper">
+                                <label for="age"> Age </label>
+                                <input
+                                    type="number"
+                                    name="age"
+                                    id="age"
+                                    placeholder="Input Age"
+                                />
+                            </div>
+
+                            <div class="type-wrapper">
+                                <label for="pet-select"> Pet Type </label>
+                                <select name="pets" id="pet-select">
+                                    <option value="select">
+                                        --Select Type--
+                                    </option>
+                                    <option value="Dog">Dog</option>
+                                    <option value="Cat">Cat</option>
+                                </select>
+                            </div>
+
+                            <div class="weight-wrapper">
+                                <label for="weight"> Weight </label>
+                                <input
+                                    type="number"
+                                    name="weight"
+                                    id="weight"
+                                    placeholder="Input Weight"
+                                />
+                            </div>
+
+                            <div class="length-wrapper">
+                                <label for="length"> Length </label>
+                                <input
+                                    type="number"
+                                    name="length"
+                                    id="length"
+                                    placeholder="Input Length"
+                                />
+                            </div>
+
+                            <div class="color-wrapper">
+                                <label for="color"> Color </label>
+                                <input type="color" name="color" id="color" />
+                            </div>
+
+                            <div class="breed-wrapper">
+                                <label for="breed-select"> Breed ID </label>
+                                <select name="breeds" id="breed-select">
+                                    <option value="select">
+                                        --Select Breed--
+                                    </option>
+                                    <!-- render breeds of each type here -->
+                                </select>
+                            </div>
+
+                            <div class="check-heath">
+                                <label for="vaccinated">
+                                    Vaccinated
+                                    <input
+                                        type="checkbox"
+                                        name="vaccinated"
+                                        id="vaccinated"
+                                    />
+                                </label>
+
+                                <label for="dewormed">
+                                    Dewormed
+                                    <input
+                                        type="checkbox"
+                                        name="dewormed"
+                                        id="dewormed"
+                                    />
+                                </label>
+
+                                <label for="sterilized">
+                                    Sterilized
+                                    <input
+                                        type="checkbox"
+                                        name="sterilized"
+                                        id="sterilized"
+                                    />
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="button-wrapper">
+                            <button type="submit">Submit</button>
+                            <button class="filter-heathy">
+                                Show Healthy Pet
+                            </button>
+                            <button class="calc-bmi">Calculate BMI</button>
+                        </div>
+                    </form>
+
+                    <div id="list">
+                        <div class="title grid">
+                            <p class="id">ID</p>
+                            <p class="name">Name</p>
+                            <p class="age">Age</p>
+                            <p class="type">Type</p>
+                            <p class="weight">Weight</p>
+                            <p class="length">Length</p>
+                            <p class="breed">Breed</p>
+                            <p class="color">Color</p>
+                            <p class="vaccinated">Vaccinated</p>
+                            <p class="dewormed">Dewormed</p>
+                            <p class="sterilized">Sterilized</p>
+                            <p class="bmi">BMI</p>
+                            <p class="date">Date Added</p>
+                            <p class="action">Action</p>
+                        </div>
+
+                        <div class="list-wrapper">
+                            <!-- render list items here -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- link javascript -->
+        <script src="./js/utilities.js"></script>
+        <!-- <script src="./js/breed.js"></script> -->
+        <script src="./js/storage.js"></script>
+        <script src="./js/index.js"></script>
+    </body>
+</html>

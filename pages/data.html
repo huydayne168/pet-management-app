@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- link font awesome -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+            integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+
+        <!-- link reset css -->
+        <link rel="stylesheet" href="../css/reset.css" />
+        <!-- link utilities CSS -->
+        <link rel="stylesheet" href="../css/utilities.css" />
+        <!-- link main css -->
+        <link rel="stylesheet" href="../css/style.css" />
+        <!-- link edit css -->
+        <link rel="stylesheet" href="../css/data.css" />
+    </head>
+    <body>
+        <div id="side-bar">
+            <a href="../index.html" class="app">
+                <i class="fa-solid fa-shield-dog"></i>
+                <p>Pet App</p>
+            </a>
+
+            <a href="#" class="more hidden">
+                <i class="fa-solid fa-bars"></i>
+            </a>
+
+            <a href="../index.html" class="home">
+                <i class="fa-solid fa-house"></i>
+                <p>Home</p>
+            </a>
+
+            <a href="./edit.html" class="edit">
+                <i class="fa-solid fa-pen-to-square"></i>
+                <p>Edit</p>
+            </a>
+
+            <a href="./search.html" class="search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <p>Search</p>
+            </a>
+
+            <a href="./breed.html" class="breed">
+                <i class="fa-solid fa-list"></i>
+                <p>Breed</p>
+            </a>
+
+            <a href="./data.html" class="data">
+                <i class="fa-solid fa-file"></i>
+                <p>Data</p>
+            </a>
+        </div>
+
+        <main id="main">
+            <div class="container">
+                <header class="logo">
+                    <h1>Import / Export Data</h1>
+                </header>
+
+                <div class="content">
+                    <form action="#">
+                        <div class="file-wrapper">
+                            <label for="file">File source</label>
+                            <input type="file" name="file" id="file" />
+                        </div>
+
+                        <div class="button-wrapper">
+                            <button type="submit" class="import-btn">
+                                Import Data
+                            </button>
+                            <button type="submit" class="export-btn">
+                                Export Data
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </main>
+
+        <!-- Link javascript: -->
+        <script src="../js/utilities.js"></script>
+        <script src="../js/FileSaver.js"></script>
+        <script src="../js/data.js"></script>
+    </body>
+</html>
